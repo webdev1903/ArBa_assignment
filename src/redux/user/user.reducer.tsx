@@ -86,7 +86,9 @@ export const userReducer = (
       const temp = state.cart.filter((e) => {
         if (e.id === payload.id) {
           e.quantity += payload.q;
-          return e;
+          if (e.quantity > 0) {
+            return e;
+          }
         } else {
           return e;
         }
