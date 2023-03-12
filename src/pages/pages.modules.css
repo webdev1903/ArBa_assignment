@@ -1,0 +1,325 @@
+@import "./../index.css";
+@import "./../App.css";
+
+.LoginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.LoginContainer > div {
+  width: 50%;
+  height: calc(100vh);
+}
+.LoginContainer > div:nth-child(1) {
+  background-color: var(--primary-color);
+}
+.LoginContainer > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  border: 1px solid black;
+}
+.LoginContainer > div:nth-child(2) > div:nth-child(1) {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  margin-top: 50px;
+}
+.LoginContainer > div:nth-child(2) > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+.LoginContainer > div:nth-child(2) > h1 {
+  line-height: 0;
+}
+.LoginContainer > div:nth-child(2) > p {
+  width: 40%;
+  text-align: center;
+  /* margin-top: -10px; */
+}
+.LoginContainer > div:nth-child(2) > form > input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  padding: 5px;
+  outline: none;
+}
+.LoginContainer > div:nth-child(2) > form > div {
+  position: relative;
+  border-bottom: 1px solid var(--primary-color);
+  width: 100%;
+}
+.LoginContainer > div:nth-child(2) > form > div > input {
+  border: none;
+  padding: 5px;
+  outline: none;
+}
+.EyeIcon {
+  position: absolute;
+  right: 5px;
+  color: var(--primary-color);
+}
+.LoginContainer > div:nth-child(2) > form > input[type="submit"] {
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+}
+.LoginContainer > div:nth-child(2) > form > input[type="submit"]:hover {
+  background-color: var(--secondary-color);
+}
+.SignupContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SignupContainer > div {
+  width: 50%;
+  height: calc(100vh);
+}
+.SignupContainer > div:nth-child(1) {
+  background-color: var(--primary-color);
+}
+.SignupContainer > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  border: 1px solid black;
+}
+.SignupContainer > div:nth-child(2) > div:nth-child(1) {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  margin-top: 50px;
+}
+.SignupContainer > div:nth-child(2) > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 150px;
+  margin-bottom: 20px;
+  height: 250px;
+}
+.SignupContainer > div:nth-child(2) > h1 {
+  line-height: 0;
+}
+.SignupContainer > div:nth-child(2) > p {
+  width: 40%;
+  text-align: center;
+  /* margin-top: -10px; */
+}
+.SignupContainer > div:nth-child(2) > form > input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  padding: 5px;
+  outline: none;
+}
+.SignupContainer > div:nth-child(2) > form > div {
+  position: relative;
+  border-bottom: 1px solid var(--primary-color);
+  width: 100%;
+}
+.SignupContainer > div:nth-child(2) > form > div > input {
+  border: none;
+  padding: 5px;
+  outline: none;
+}
+.EyeIcon {
+  position: absolute;
+  right: 5px;
+  color: var(--primary-color);
+}
+.SignupContainer > div:nth-child(2) > form > input[type="submit"] {
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.SignupContainer > div:nth-child(2) > form > input[type="submit"]:hover {
+  background-color: var(--secondary-color);
+}
+.LinktoSignup {
+  text-decoration: none;
+  color: var(--primary-color);
+  text-align: left;
+}
+.Home {
+  position: relative;
+}
+.Home > p {
+  margin-top: 50px;
+  font-size: large;
+  margin-left: 20px;
+  font-weight: bolder;
+}
+.SampleProducts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 150px);
+  row-gap: 150px;
+  column-gap: 50px;
+  padding: 0 50px;
+}
+.Home > button {
+  margin-top: 150px;
+  margin-bottom: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  padding: 5px 20px;
+  border: none;
+  margin-left: 80%;
+}
+.ProductContainer > p {
+  margin-left: 20px;
+  font-size: larger;
+  font-weight: bolder;
+}
+.ProductContainer > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 150px);
+  row-gap: 150px;
+  column-gap: 50px;
+  padding: 0 50px;
+}
+.CartContainer > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto-fill, 150px);
+  row-gap: 150px;
+  column-gap: 50px;
+  padding: 0 50px;
+}
+.CartContainer > p {
+  margin-left: 20px;
+  font-size: larger;
+  font-weight: bolder;
+}
+.CartContainer > button {
+  margin-top: 180px;
+  margin-bottom: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  padding: 5px 20px;
+  border: none;
+  margin-left: 85%;
+}
+.ProfileContainer {
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+}
+.ProfileContainer > button {
+  margin-top: 30px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.ChallengeQuestion {
+  background-color: var(--primary-color);
+  padding: 30px 20px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.ChallengeQuestion > p {
+  color: white;
+  font-weight: bold;
+}
+.SameStyle {
+  margin-left: 20px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.Note > div {
+  background-color: var(--primary-color);
+  padding: 30px 20px;
+  width: fit-content;
+  text-align: center;
+  margin-left: 100px;
+}
+.Note > div > p {
+  color: white;
+  font-weight: bold;
+}
+.Output > p:nth-child(2) {
+  height: 30px;
+  width: 50px;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+}
+.DataCollection > div {
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.DataCollection > div > input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--primary-color);
+  padding: 5px 20px;
+  font-size: large;
+  width: 400px;
+}
+.DataCollection > div > button {
+  border: none;
+  padding: 5px 40px;
+  color: white;
+  font-weight: bold;
+  background-color: var(--primary-color);
+}
+.DataCollection > div > button:hover {
+  background-color: var(--secondary-color);
+}
+.DataCollection > p:nth-child(3) {
+  margin-left: 100px;
+  line-height: 0;
+  color: gray;
+  font-size: medium;
+}
+@media only screen and (max-width: 768px) {
+  .SampleProducts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ProductContainer > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .CartContainer > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 428px) {
+  .SampleProducts {
+    grid-template-columns: 100%;
+  }
+  .ProductContainer > div {
+    grid-template-columns: 100%;
+  }
+  .CartContainer > div {
+    grid-template-columns: 100%;
+  }
+}
