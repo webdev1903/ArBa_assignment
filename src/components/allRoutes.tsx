@@ -7,6 +7,7 @@ import Product from "../pages/product";
 import Profile from "../pages/profile";
 import SignUp from "../pages/signup";
 import PrivateRoute from "./privateRoute";
+import NotFound from "../pages/notFound";
 
 export default function AllRoutes() {
   return (
@@ -53,6 +54,7 @@ export default function AllRoutes() {
           </PrivateRoute>
         }
       ></Route>
+      <Route path="*" element={<NotFound />}></Route>
     </Routes>
   );
 }
